@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D9FB43C-4254-485D-85ED-B474D010E10C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Autoshop</RootNamespace>
+    <AssemblyName>Autoshop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DnsClient, Version=1.0.7.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.0.7\lib\net45\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\jovan\Desktop\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\jovan\Desktop\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\jovan\Desktop\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.GridFS">
+      <HintPath>C:\Users\jovan\Desktop\net45\MongoDB.Driver.GridFS.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy">
+      <HintPath>C:\Users\jovan\Desktop\net45\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DodajKolicinu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajKolicinu.Designer.cs">
+      <DependentUpon>DodajKolicinu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\AkumulatorForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\AkumulatorForma.Designer.cs">
+      <DependentUpon>AkumulatorForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\BrisacForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\BrisacForma.Designer.cs">
+      <DependentUpon>BrisacForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\DodatnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\DodatnaForma.Designer.cs">
+      <DependentUpon>DodatnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\FaroviForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\FaroviForma.Designer.cs">
+      <DependentUpon>FaroviForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\MotorForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\MotorForma.Designer.cs">
+      <DependentUpon>MotorForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\PneumaticiForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\PneumaticiForma.Designer.cs">
+      <DependentUpon>PneumaticiForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\RashladniForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\RashladniForma.Designer.cs">
+      <DependentUpon>RashladniForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\RetrovizorForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\RetrovizorForma.Designer.cs">
+      <DependentUpon>RetrovizorForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\SijaliceForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\SijaliceForma.Designer.cs">
+      <DependentUpon>SijaliceForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme za dodavanje\StaklaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme za dodavanje\StaklaForma.Designer.cs">
+      <DependentUpon>StaklaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Komponente\Akumulatori.cs" />
+    <Compile Include="Komponente\Brisaci.cs" />
+    <Compile Include="Komponente\DodatnaOprema.cs" />
+    <Compile Include="Komponente\Farovi.cs" />
+    <Compile Include="Komponente\Komponenta.cs" />
+    <Compile Include="Komponente\Motor.cs" />
+    <Compile Include="Komponente\Pneumatici.cs" />
+    <Compile Include="Komponente\RashladniSistem.cs" />
+    <Compile Include="Komponente\Retrovizor.cs" />
+    <Compile Include="Komponente\Sijalice.cs" />
+    <Compile Include="Komponente\Stakla.cs" />
+    <Compile Include="Korpa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Korpa.Designer.cs">
+      <DependentUpon>Korpa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marka.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Pretraga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pretraga.Designer.cs">
+      <DependentUpon>Pretraga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Proizvod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DodajKolicinu.resx">
+      <DependentUpon>DodajKolicinu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\AkumulatorForma.resx">
+      <DependentUpon>AkumulatorForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\BrisacForma.resx">
+      <DependentUpon>BrisacForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\DodatnaForma.resx">
+      <DependentUpon>DodatnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\FaroviForma.resx">
+      <DependentUpon>FaroviForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\MotorForma.resx">
+      <DependentUpon>MotorForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\PneumaticiForma.resx">
+      <DependentUpon>PneumaticiForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\RashladniForma.resx">
+      <DependentUpon>RashladniForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\RetrovizorForma.resx">
+      <DependentUpon>RetrovizorForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\SijaliceForma.resx">
+      <DependentUpon>SijaliceForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme za dodavanje\StaklaForma.resx">
+      <DependentUpon>StaklaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Korpa.resx">
+      <DependentUpon>Korpa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pretraga.resx">
+      <DependentUpon>Pretraga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
